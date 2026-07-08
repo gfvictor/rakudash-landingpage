@@ -315,7 +315,7 @@ export function Scrollytelling() {
     >
       <div className="sticky top-16 flex h-[calc(100vh-4rem)] w-full flex-col overflow-hidden md:flex-row">
         <div className="flex h-1/2 w-full items-center justify-center p-6 md:h-full md:w-1/2 md:p-16">
-          <div className="relative h-40 w-full max-w-md md:h-64">
+          <div className="relative h-40 w-full max-w-lg md:h-64">
             {steps.map((step, index) => (
               <div
                 key={step.id}
@@ -327,7 +327,7 @@ export function Scrollytelling() {
                       : 'pointer-events-none z-0 translate-y-12 opacity-0'
                 }`}
               >
-                <h3 className="text-foreground mb-4 text-left text-3xl font-bold tracking-tight whitespace-pre-line md:text-5xl">
+                <h3 className="text-foreground mb-12 text-left text-3xl font-bold tracking-tight whitespace-pre-line md:text-5xl">
                   {step.title}
                 </h3>
                 <p className="text-muted-foreground text-justify text-lg leading-relaxed">

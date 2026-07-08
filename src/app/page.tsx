@@ -1,6 +1,6 @@
 'use client'
 
-import { Navbar, AtomicHub, ScrollIndicator, Scrollytelling } from '@/ui'
+import { Navbar, AtomicHub, ScrollIndicator, Scrollytelling, EcosystemImpact } from '@/ui'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
 
@@ -18,10 +18,10 @@ export default function LandingPage() {
           <div className="bg-primary/5 pointer-events-none absolute -right-20 bottom-1/4 z-0 h-96 w-96 rounded-full blur-[100px]"></div>
 
           <div className="relative z-10 container mx-auto mt-8 flex flex-col items-center px-6 text-center">
-            <h1 className="mb-6 max-w-4xl text-3xl leading-[1.1] font-extrabold tracking-tight whitespace-pre-line sm:text-5xl md:text-7xl">
+            <h1 className="mb-12 max-w-4xl text-3xl leading-[1.1] font-extrabold tracking-tight whitespace-pre-line sm:text-5xl md:text-7xl">
               {t('hero.title')}
             </h1>
-            <h2 className="text-muted-foreground mb-10 max-w-2xl text-justify text-lg leading-relaxed font-medium sm:text-xl md:text-2xl">
+            <h2 className="text-muted-foreground mb-10 max-w-2xl text-center text-lg leading-relaxed font-medium sm:text-xl md:text-2xl">
               {t('hero.subtitle')}
             </h2>
 
@@ -54,6 +54,8 @@ export default function LandingPage() {
         >
           <Scrollytelling />
         </section>
+
+        <EcosystemImpact />
       </main>
     </>
   )
