@@ -1,12 +1,13 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
-import { Link, usePathname } from '@/i18n'
+import { useTranslation } from 'react-i18next'
+import { usePathname } from 'next/navigation'
 import { ThemeToggle, LanguageToggle } from '@/actions'
 
 export function Navbar() {
-  const t = useTranslations('navbar')
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
 
   const pathname = usePathname()
@@ -47,13 +48,13 @@ export function Navbar() {
 
           <nav className="text-md text-muted-foreground ml-24 hidden gap-8 md:flex">
             <Link href="/" className={linkClass('/')}>
-              {t('home')}
+              {t('navbar.home')}
             </Link>
             <Link href="#features" className={linkClass('#features')}>
-              {t('features')}
+              {t('navbar.features')}
             </Link>
             <Link href="#contact" className={linkClass('#contact')}>
-              {t('contact')}
+              {t('navbar.contact')}
             </Link>
           </nav>
 
@@ -89,13 +90,13 @@ export function Navbar() {
       >
         <nav className="text-foreground flex flex-col items-center gap-8">
           <Link href="/" onClick={closeMenu} className="text-3xl tracking-tight">
-            {t('home')}
+            {t('navbar.home')}
           </Link>
           <Link href="#features" onClick={closeMenu} className="text-3xl tracking-tight">
-            {t('features')}
+            {t('navbar.features')}
           </Link>
           <Link href="#contact" onClick={closeMenu} className="text-3xl tracking-tight">
-            {t('contact')}
+            {t('navbar.contact')}
           </Link>
 
           <div className="mt-8 flex flex-col items-center gap-8 text-3xl">
