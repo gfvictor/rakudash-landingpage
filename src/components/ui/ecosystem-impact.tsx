@@ -71,7 +71,7 @@ export const EcosystemImpact = () => {
         </div>
 
         <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center p-1 bg-muted/30 dark:bg-muted/10 rounded-2xl border border-border/40">
+          <div className="inline-flex items-center p-1 bg-muted/30 dark:bg-muted/40 rounded-2xl border border-border/40">
             {(Object.keys(tabs) as Tab[]).map((tabKey) => (
               <button
                 key={tabKey}
@@ -107,7 +107,7 @@ export const EcosystemImpact = () => {
                     WebkitMaskPosition: 'right top'
                   }}
                 />
-                <span className="relative z-10 text-sm font-semibold tracking-wider text-primary uppercase mb-4">
+                <span className="relative z-10 text-sm font-medium tracking-wider text-muted-foreground uppercase mb-4">
                   {activeData.subtitle}
                 </span>
                 <h3 className="relative z-10 text-2xl sm:text-3xl font-medium text-foreground mb-6 leading-relaxed">
@@ -120,7 +120,7 @@ export const EcosystemImpact = () => {
               {activeData.metrics.map((metric, idx) => (
                 <div key={idx} className="p-5 sm:p-8 rounded-2xl bg-card border border-border/40 shadow-sm flex flex-col justify-center flex-1">
                   <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-4 text-muted-foreground">
-                    <div className="p-2 sm:p-2.5 rounded-lg bg-muted/50 dark:bg-muted/20 text-foreground">
+                    <div className="p-2 sm:p-2.5 rounded-xl bg-muted/90 dark:bg-muted/60 text-foreground">
                       {metric.icon}
                     </div>
                     <span className="font-medium text-xs sm:text-sm uppercase tracking-wider">{metric.label}</span>
