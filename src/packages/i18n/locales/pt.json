@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "title": "Gestão integrada para operação de alta performance.",
+    "description": "Rakudash centralizada dados fragmentados, otimiza gargalos de recrutamento e automatiza fluxos adminitrativos."
+  },
+  "navbar": {
+    "home": "Início",
+    "features": "Recursos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Controle Total da sua Haken Gaisha",
+    "subtitle": "Sistematize o ciclo completo da sua operação. Do recrutamento e contratos à gestão diária de folgas, vales e moradias, O Rakudash centraliza toda a adminitração da sua empresa e elimina de vez a dependência de planilhas dispersas e processos manuais sujeitos a falhas.",
+    "cta_primary": "Conhecer a Plataforma",
+    "cta_secondary": "Agendar Demonstração"
+  },
+  "scrolly": {
+    "step1_title": "Gestão Descentralizada e Riscos Operacionais",
+    "step1_desc": "A dependência da planilha dispersas e processos manuais fragmenta os dados da operação. A comunicação assíncrona entre escritório e fábrica gera retranalho, inconsistência e vulnerabilidades no compliance da empresa.",
+    "step2_title": "Centralização e Governança de Dados",
+    "step2_desc": "O Rakudash atua como o núcleo do seu backoffice. Ele consolida e processa automaticamente toda a esteira de administração: desde a gestão de contratos até a consolidação de ponto, controle de moradias e vales.",
+    "step3_title": "Sincronização Operacional Ponta a Ponta",
+    "step3_desc": "Um ecossistema fechado que elimina a dupla digitação. o candidato aplica para cadastro via EnTori, o backoffice gerencia a operação unificada no Rakudash e o colaborador acessa o painel via WanSpot. Dados consistentes, em tempo real."
+  },
+  "metrics": {
+    "title": "O Ecossistema Definitivo para Agências de Emprego",
+    "subtitle": "Do recrutamento ao contracheque. Uma infraestrutura onde a informação flui sem intervenção manual, conectando candidatos, gestão e funcionários em tempo real.",
+    "entori": {
+      "subtitle": "Recrutamento & Retenção",
+      "metric1_label": "Aumento na Conversão",
+      "metric2_label": "Perda de Dados no Funil",
+      "description": "A burocracia do papel espanta bons candidatos. Com o onboarding digital via celular, você elimina a barreira de entrada e garante que 100% dos dados caiam estruturados no banco, prontos para alocação."
+    },
+    "rakudash": {
+      "subtitle": "Eficiência & Compliance",
+      "metric1_label": "Carga Administrativa",
+      "metric2_label": "Centralização de Dados",
+      "description": "Descentralização custa caro. Substitua dezenas de planilhas frágeis por um motor único. O que sua equipe de RH levava semanas para cruzar, o Rakudash consolida em tempo real."
+    },
+    "wanspot": {
+      "subtitle": "Satisfação & Transparência",
+      "metric1_label": "Requisições Ignoradas",
+      "metric2_label": "Acesso à Informação",
+      "description": "Funcionário no escuro é funcionário insatisfeito. Ao entregar autonomia para solicitações de férias e adiantamentos na palma da mão, você zera os ruídos de comunicação e constrói confiança."
+    },
+    "cta_title": "Pronto para ver as engrenagens de perto?",
+    "cta_primary": "Agendar Demonstração",
+    "cta_secondary": "Explorar Funcionalidades"
+  }
+}
