@@ -1,9 +1,11 @@
+'use client'
+
 import { Navbar, AtomicHub, ScrollIndicator } from '@/ui'
-import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n'
+import { useTranslation } from 'react-i18next'
+import Link from 'next/link'
 
 export default function LandingPage() {
-  const t = useTranslations('hero')
+  const { t } = useTranslation()
 
   return (
     <>
@@ -17,10 +19,10 @@ export default function LandingPage() {
 
           <div className="relative z-10 container mx-auto mt-8 flex flex-col items-center px-6 text-center">
             <h1 className="mb-6 max-w-4xl text-3xl leading-[1.1] font-extrabold tracking-tight whitespace-pre-line sm:text-5xl md:text-7xl">
-              {t('title')}
+              {t('hero.title')}
             </h1>
             <h2 className="text-muted-foreground mb-10 max-w-2xl text-justify text-lg leading-relaxed font-medium sm:text-xl md:text-2xl">
-              {t('subtitle')}
+              {t('hero.subtitle')}
             </h2>
 
             <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
@@ -28,13 +30,13 @@ export default function LandingPage() {
                 href="/#features"
                 className="bg-primary text-primary-foreground rounded-xl px-8 py-4 text-center font-bold shadow-xl transition-all duration-300 hover:scale-105"
               >
-                {t('cta_primary')}
+                {t('hero.cta_primary')}
               </Link>
               <Link
                 href="/#contact"
                 className="bg-background border-border text-foreground hover:bg-muted/50 rounded-xl border px-8 py-4 text-center font-bold shadow-sm transition-all duration-300"
               >
-                {t('cta_secondary')}
+                {t('hero.cta_secondary')}
               </Link>
             </div>
           </div>
@@ -46,8 +48,11 @@ export default function LandingPage() {
           <ScrollIndicator />
         </section>
 
-        <section id="features" className="w-full bg-background relative z-10 border-t border-border/40">
-          <p> Scrollytelling Placeholder </p> 
+        <section
+          id="features"
+          className="bg-background border-border/40 relative z-10 w-full border-t"
+        >
+          <p> Scrollytelling Placeholder </p>
         </section>
       </main>
     </>
