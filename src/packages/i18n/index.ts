@@ -5,16 +5,14 @@ import en from '@/locales/en.json'
 import ja from '@/locales/ja.json'
 import pt from '@/locales/pt.json'
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: { translation: en },
-      ja: { translation: ja },
-      pt: { translation: pt },
-    },
-    fallbackLng: 'ja',
-    interpolation: { escapeValue: false },
-  })
+i18n.use(initReactI18next).init({
+  resources: {
+    en: { translation: en },
+    ja: { translation: ja },
+    pt: { translation: pt },
+  },
+  fallbackLng: 'ja',
+  interpolation: { escapeValue: false },
+})
 
 export default i18n
