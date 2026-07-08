@@ -2,5 +2,16 @@
   "metadata": {
     "title": "Integrated management for high-performance operations.",
     "description": "Rakudash centralizes fragmented data, streamlines recruitment pipelines, and automates administrative workflows."
+  },
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Total Control for your Haken Gaisha",
+    "subtitle": "Systematize the entire lifecycle of your operation. From recruitment and contracts to the daily management of time-offs, cash advances, and housing, Rakudash centralizes your company's administration and permanently eliminates the dependency on scattered spreadsheets and error-prone manual processes.",
+    "cta_primary": "Explore the Platform",
+    "cta_secondary": "Schedule a Demo"
   }
 }

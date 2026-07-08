@@ -21,7 +21,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/providers": ["./src/providers/index.ts"],
-      "@/i18n": ["./src/packages/i18n/src/index.ts"]
+      "@/i18n": ["./src/packages/i18n/src/index.ts"],
+      "@/ui": ["./src/components/ui/index.ts"],
+      "@/actions": ["./src/components/actions/index.ts"]
     }
   },
   "include": [

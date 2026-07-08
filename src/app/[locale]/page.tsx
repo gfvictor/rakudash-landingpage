@@ -1,10 +1,55 @@
-export default function Home() {
+import { Navbar, AtomicHub, ScrollIndicator } from '@/ui'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n'
+
+export default function LandingPage() {
+  const t = useTranslations('hero')
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-zinc-950 text-zinc-50">
-      <h1 className="text-4xl font-bold tracking-tight">Rakudash Landing Page</h1>
-      <p className="mt-4 text-zinc-400">
-        In Progress... Check out another branch in the repository
-      </p>
-    </main>
+    <>
+      <Navbar />
+
+      <main className="bg-background text-foreground flex min-h-screen flex-col items-center overflow-x-hidden">
+        <section className="relative flex min-h-[90vh] w-full flex-col items-center justify-start overflow-hidden pt-12 pb-24">
+          <div className="from-primary/5 pointer-events-none absolute inset-0 z-0 bg-gradient-to-b via-transparent to-transparent"></div>
+          <div className="bg-primary/5 pointer-events-none absolute top-1/4 -left-20 z-0 h-96 w-96 rounded-full blur-[100px]"></div>
+          <div className="bg-primary/5 pointer-events-none absolute -right-20 bottom-1/4 z-0 h-96 w-96 rounded-full blur-[100px]"></div>
+
+          <div className="relative z-10 container mx-auto mt-8 flex flex-col items-center px-6 text-center">
+            <h1 className="mb-6 max-w-4xl text-3xl leading-[1.1] font-extrabold tracking-tight whitespace-pre-line sm:text-5xl md:text-7xl">
+              {t('title')}
+            </h1>
+            <h2 className="text-muted-foreground mb-10 max-w-2xl text-justify text-lg leading-relaxed font-medium sm:text-xl md:text-2xl">
+              {t('subtitle')}
+            </h2>
+
+            <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
+              <Link
+                href="/#features"
+                className="bg-primary text-primary-foreground rounded-xl px-8 py-4 text-center font-bold shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                {t('cta_primary')}
+              </Link>
+              <Link
+                href="/#contact"
+                className="bg-background border-border text-foreground hover:bg-muted/50 rounded-xl border px-8 py-4 text-center font-bold shadow-sm transition-all duration-300"
+              >
+                {t('cta_secondary')}
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative z-10 mt-8 w-full">
+            <AtomicHub />
+          </div>
+
+          <ScrollIndicator />
+        </section>
+
+        <section id="features" className="w-full bg-background relative z-10 border-t border-border/40">
+          <p> Scrollytelling Placeholder </p> 
+        </section>
+      </main>
+    </>
   )
 }
