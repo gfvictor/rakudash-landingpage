@@ -13,5 +13,13 @@
     "subtitle": "Systematize the entire lifecycle of your operation. From recruitment and contracts to the daily management of time-offs, cash advances, and housing, Rakudash centralizes your company's administration and permanently eliminates the dependency on scattered spreadsheets and error-prone manual processes.",
     "cta_primary": "Explore the Platform",
     "cta_secondary": "Schedule a Demo"
+  },
+  "scrolly": {
+    "step1_title": "Decentralized Management & Operational Risks",
+    "step1_desc": "Relying on scattered spreadsheets and manual processes fragments operational data. Asynchronous communication between the office and the factory floor generates reworkng inconsistencies, and compliance vulnerabilities.",
+    "step2_title": "Centralization & Data Governance",
+    "step2_desc": "Rakudash acts as the core of your back office. It consolidates and automatically processes the entire administrative pipeline: from contract management to attendance tracking, housing control, and cash advances.",
+    "step3_title": "End-to-End Operational Synchronization",
+    "step3_desc": "A closed ecosystem that eliminates double data entry. Factory management inputs primary data via EnTori, the back office unifies operations through Rakudash, and employees access their dashboard via WanSpot. Consistent data in real-time."
   }
 }
