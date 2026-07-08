@@ -2,5 +2,16 @@
   "metadata": {
     "title": "Gestão integrada para operação de alta performance.",
     "description": "Rakudash centralizada dados fragmentados, otimiza gargalos de recrutamento e automatiza fluxos adminitrativos."
+  },
+  "navbar": {
+    "home": "Início",
+    "features": "Recursos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Controle Total da sua Haken Gaisha",
+    "subtitle": "Sistematize o ciclo completo da sua operação. Do recrutamento e contratos à gestão diária de folgas, vales e moradias, O Rakudash centraliza toda a adminitração da sua empresa e elimina de vez a dependência de planilhas dispersas e processos manuais sujeitos a falhas.",
+    "cta_primary": "Conhecer a Plataforma",
+    "cta_secondary": "Agendar Demonstração"
   }
 }

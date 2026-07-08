@@ -8,7 +8,11 @@ export type Locale = (typeof locales)[number]
 export const routing = defineRouting({
   locales,
   defaultLocale: 'ja',
-  localeDetection: false,
+  localePrefix: 'never',
+  localeCookie: {
+    name: 'NEXT_LOCALE',
+    maxAge: 60 * 60 * 24 * 365,
+  },
 })
 
 export const { Link, redirect, usePathname, useRouter } = createNavigation(routing)
