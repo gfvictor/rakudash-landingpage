@@ -1,6 +1,6 @@
 'use client'
 
-import { Navbar, AtomicHub, ScrollIndicator } from '@/ui'
+import { Navbar, AtomicHub, ScrollIndicator, Scrollytelling } from '@/ui'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
 
@@ -11,7 +11,7 @@ export default function LandingPage() {
     <>
       <Navbar />
 
-      <main className="bg-background text-foreground flex min-h-screen flex-col items-center overflow-x-hidden">
+      <main className="bg-background text-foreground flex min-h-screen flex-col items-center">
         <section className="relative flex min-h-[90vh] w-full flex-col items-center justify-start overflow-hidden pt-12 pb-24">
           <div className="from-primary/5 pointer-events-none absolute inset-0 z-0 bg-gradient-to-b via-transparent to-transparent"></div>
           <div className="bg-primary/5 pointer-events-none absolute top-1/4 -left-20 z-0 h-96 w-96 rounded-full blur-[100px]"></div>
@@ -52,7 +52,7 @@ export default function LandingPage() {
           id="features"
           className="bg-background border-border/40 relative z-10 w-full border-t"
         >
-          <p> Scrollytelling Placeholder </p>
+          <Scrollytelling />
         </section>
       </main>
     </>
