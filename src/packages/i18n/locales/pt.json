@@ -46,5 +46,26 @@
     "cta_title": "Pronto para ver as engrenagens de perto?",
     "cta_primary": "Agendar Demonstração",
     "cta_secondary": "Explorar Funcionalidades"
+  },
+  "features": {
+    "title": "Visão Detalhada",
+    "subtitle": "Explore as principais funcionalidades do nosso ecossistema e entenda como cada ferramenta simplifica a sua operação diária.",
+    "sidebar_title": "Recursos",
+    "video_pending": "Vídeo demonstrativo pendente",
+    "video_replay": "Assistir novamente",
+    "entori": {
+      "feat1_title": "Formulário de Candidatura",
+      "feat1_desc": "O candidato se cadastra diretamente via formulário online, totalmente integrado ao sistema. Ao preencher os campos do formulário, a ficha de registro completo é criada para monitoramento, mesmo antes do aceite do interessado."
+    },
+    "rakudash": {
+      "feat1_title": "Notificações",
+      "feat1_desc": "As notificações no painel do gestor, localizada no canto superior direito da tela, oferece alertas de interação com o EnTori e o WanSpot. Se um candidato enviar um formulário de cadastro ou se um funcionário solicitar um vale ou um pedido de folga, uma notificação aparecerá em tempo real.",
+      "feat2_title": "Visualização de Currículo",
+      "feat2_desc": "Ao preencher o formulário de candidatura, o currículo é automaticamente gerado no painel de gestão de candidatos e transferido para a gestão de funcionários, quando for contratado. O gestor pode visualizar e editar infomações, definir e apagar avatar/foto, e outras informaçòes, como licenças e certificações, dependentes, etc."
+    },
+    "wanspot": {
+      "feat1_title": "Pedido de Vale",
+      "feat1_desc": "Caso a empresa disponibilize a opção, o funcionário preenche um formulário de pedido de vale na plataforma WanSpot e a solicitação é enviada automaticamente para o painel de gestão do Rakudash. O status do pedido pode ser visualizado pelo funcionário, até que o pedido seja autorizado pelo gestor."
+    }
   }
 }

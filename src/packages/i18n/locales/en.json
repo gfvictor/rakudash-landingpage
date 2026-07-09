@@ -46,5 +46,26 @@
     "cta_title": "Ready to see the gears up close?",
     "cta_primary": "Schedule a Demo",
     "cta_secondary": "Explore Features"
+  },
+  "features": {
+    "title": "Detailed Overview",
+    "subtitle": "Explore the core features of our ecosystem and understand how each tool simplifies your daily operations.",
+    "sidebar_title": "Features",
+    "video_pending": "Demo video pending",
+    "video_replay": "Watch again",
+    "entori": {
+      "feat1_title": "Application Form",
+      "feat1_desc": "Candidates register directly via an online form, fully integrated into the system. Upon filling out the fields, a complete registration profile is created for tracking, even before the candidate officially accepts the job."
+    },
+    "rakudash": {
+      "feat1_title": "Notifications",
+      "feat1_desc": "Notifications in the manager's dashboard, located in the top right corner of the screen, provide interaction alerts for EnTori and WanSpot. If a candidate submits an application or an employee requests a cash advance or time off, a notification will appear in real-time.",
+      "feat2_title": "Resume Visualization",
+      "feat2_desc": "Upon filling out the application form, a resume is automatically generated in the candidate management dashboard and transferred to employee management once hired. The manager can view and edit information, set or remove avatars/photos, and manage other details like licenses, certifications, dependents, etc."
+    },
+    "wanspot": {
+      "feat1_title": "Cash Advance Request",
+      "feat1_desc": "If the company provides this option, the employee fills out a cash advance request form on the WanSpot platform, and the request is automatically sent to the Rakudash management dashboard. The employee can view the request status until the manager authorizes it."
+    }
   }
 }
