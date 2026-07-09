@@ -50,7 +50,7 @@ export function Navbar() {
             <Link href="/" className={linkClass('/')}>
               {t('navbar.home')}
             </Link>
-            <Link href="#features" className={linkClass('#features')}>
+            <Link href="/features" className={linkClass('/features')}>
               {t('navbar.features')}
             </Link>
             <Link href="#contact" className={linkClass('#contact')}>
@@ -92,7 +92,7 @@ export function Navbar() {
           <Link href="/" onClick={closeMenu} className="text-3xl tracking-tight">
             {t('navbar.home')}
           </Link>
-          <Link href="#features" onClick={closeMenu} className="text-3xl tracking-tight">
+          <Link href="/features" onClick={closeMenu} className="text-3xl tracking-tight">
             {t('navbar.features')}
           </Link>
           <Link href="#contact" onClick={closeMenu} className="text-3xl tracking-tight">
