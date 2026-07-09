@@ -1,6 +1,13 @@
 'use client'
 
-import { Navbar, AtomicHub, ScrollIndicator, Scrollytelling, EcosystemImpact } from '@/ui'
+import {
+  Navbar,
+  AtomicHub,
+  ScrollIndicator,
+  Scrollytelling,
+  EcosystemImpact,
+  NeuralNetworkBackground,
+} from '@/ui'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
 
@@ -16,6 +23,7 @@ export default function LandingPage() {
           <div className="from-primary/5 pointer-events-none absolute inset-0 z-0 bg-gradient-to-b via-transparent to-transparent"></div>
           <div className="bg-primary/5 pointer-events-none absolute top-1/4 -left-20 z-0 h-96 w-96 rounded-full blur-[100px]"></div>
           <div className="bg-primary/5 pointer-events-none absolute -right-20 bottom-1/4 z-0 h-96 w-96 rounded-full blur-[100px]"></div>
+          <NeuralNetworkBackground />
 
           <div className="relative z-10 container mx-auto mt-8 flex flex-col items-center px-6 text-center">
             <h1 className="mb-12 max-w-4xl text-3xl leading-[1.1] font-bold tracking-tight whitespace-pre-line sm:text-5xl md:text-7xl">
@@ -27,7 +35,7 @@ export default function LandingPage() {
 
             <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
               <Link
-                href="/#features"
+                href="/features"
                 className="bg-primary text-primary-foreground rounded-xl px-8 py-4 text-center font-bold shadow-xl transition-all duration-300 hover:scale-105"
               >
                 {t('hero.cta_primary')}
