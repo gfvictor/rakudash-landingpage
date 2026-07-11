@@ -97,7 +97,7 @@ export const EcosystemImpact = () => {
                 onClick={() => setActiveTab(tabKey)}
                 className={`relative rounded-xl px-6 py-3 text-sm font-medium sm:px-10 sm:text-base ${
                   activeTab === tabKey
-                    ? 'text-foreground bg-background border-border/50 border shadow-sm'
+                    ? 'text-foreground bg-background border-border/50 border font-semibold shadow-sm'
                     : 'text-muted-foreground hover:text-foreground border border-transparent'
                 }`}
               >

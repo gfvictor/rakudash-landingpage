@@ -53,19 +53,89 @@
     "sidebar_title": "Recursos",
     "video_pending": "Vídeo demonstrativo pendente",
     "video_replay": "Assistir novamente",
-    "entori": {
-      "feat1_title": "Formulário de Candidatura",
-      "feat1_desc": "O candidato se cadastra diretamente via formulário online, totalmente integrado ao sistema. Ao preencher os campos do formulário, a ficha de registro completo é criada para monitoramento, mesmo antes do aceite do interessado."
-    },
-    "rakudash": {
-      "feat1_title": "Notificações",
-      "feat1_desc": "As notificações no painel do gestor, localizada no canto superior direito da tela, oferece alertas de interação com o EnTori e o WanSpot. Se um candidato enviar um formulário de cadastro ou se um funcionário solicitar um vale ou um pedido de folga, uma notificação aparecerá em tempo real.",
-      "feat2_title": "Visualização de Currículo",
-      "feat2_desc": "Ao preencher o formulário de candidatura, o currículo é automaticamente gerado no painel de gestão de candidatos e transferido para a gestão de funcionários, quando for contratado. O gestor pode visualizar e editar infomações, definir e apagar avatar/foto, e outras informaçòes, como licenças e certificações, dependentes, etc."
-    },
-    "wanspot": {
-      "feat1_title": "Pedido de Vale",
-      "feat1_desc": "Caso a empresa disponibilize a opção, o funcionário preenche um formulário de pedido de vale na plataforma WanSpot e a solicitação é enviada automaticamente para o painel de gestão do Rakudash. O status do pedido pode ser visualizado pelo funcionário, até que o pedido seja autorizado pelo gestor."
-    }
+    "entori": [
+      {
+        "id": "ent-1",
+        "title": "Formulário de Candidatura",
+        "desc": "O candidato se cadastra diretamente via formulário online, totalmente integrado ao sistema. Ao preencher os campos do formulário, a ficha de registro completo é criada para monitoramento, mesmo antes do aceite do interessado.",
+        "videoUrl": "https://rakudash.codifylab.app/entori-form.mp4"
+      },
+      {
+        "id": "ent-2",
+        "title": "Privacidade e Proteção de Dados",
+        "desc": "Antes de finalizar o envio do currículo, o candidato deve concordar com a política de tratamento de dados. A plataforma atua apenas como um canal de transmissão: as informações preenchidas são roteadas e armazenadas exclusivamente no banco de dados isolado da agência contratante. O sistema não retém os dados em um motor geral, garantindo que a empreiteira atue como a única detentora e responsável legal pela proteção do candidato.",
+        "videoUrl": ""
+      }
+    ],
+    "rakudash": [
+      {
+        "id": "rak-1",
+        "title": "Ciclo de Vida do Colaborador",
+        "desc": "O painel concentra a jornada administrativa do funcionário em um fluxo unificado. O responsável pode aprovar admissões puxadas do EnTori, cadastrar e monitorar dependentes e seguros sociais (Shakai Hoken e Koyo Hoken), processar transferências entre alocações (Idou) e gerar os documentos necessários para o desligamento (Taisha).",
+        "videoUrl": ""
+      },
+      {
+        "id": "rak-2",
+        "title": "Exportação de Currículos",
+        "desc": "A partir das informações e licenças cadastradas no perfil do candidato, o responsável pode gerar um currículo formatado em PDF ou Excel com apenas um clique. A exportação utiliza templates de currículo configurados pela própria agência para auto-completar os campos e apresentar aos clientes.",
+        "videoUrl": ""
+      },
+      {
+        "id": "rak-3",
+        "title": "Módulo de Habitação (Shitaku)",
+        "desc": "O painel disponibiliza uma aba dedicada para a gestão das propriedades alugadas pela empresa. O responsável vincula funcionários aos imóveis, monitora contratos de moradia em vigência e registra as despesas mensais (como água, luz e gás), cujo rateio é automaticamente adicionado aos descontos da folha de pagamento.",
+        "videoUrl": ""
+      },
+      {
+        "id": "rak-4",
+        "title": "Gestão de Empresas Clientes",
+        "desc": "A administração das empresas clientes é feita individualmente. O responsável cadastra as regras de horário de entrada e saída, cálculo de horas extras e departamentos. A estrutura organizacional do cliente espelha turnos e setores para garantir a correta alocação e cálculo de frequência.",
+        "videoUrl": ""
+      },
+      {
+        "id": "rak-5",
+        "title": "Fechamento de Horas e Frequência",
+        "desc": "O responsável importa as fichas de presença preenchidas durante o período e o sistema cruza esses dados com as regras específicas da empresa cliente. O cálculo de horas normais, extras, folgas, descontos e impostos é realizado automaticamente para gerar o fechamento mensal e alimentar os holerites no WanSpot.",
+        "videoUrl": ""
+      },
+      {
+        "id": "rak-6",
+        "title": "Lotes de Férias e Folgas",
+        "desc": "O processo de concessão de férias remuneradas (Yukyu) obedece à legislação japonesa, creditando lotes de folga automaticamente após o período de carência. O painel unifica esses dados para exibir ao responsável o balanço de dias disponíveis, permitindo também o monitoramento e aprovação de pedidos vindos do WanSpot.",
+        "videoUrl": ""
+      },
+      {
+        "id": "rak-7",
+        "title": "Arquivo Digital Seguro",
+        "desc": "O sistema inclui um repositório centralizado em nuvem para o armazenamento da documentação da operação. O responsável pode fazer a importação e exportação de dados e cadastros sensíveis, evitando a dependência de arquivos de papel ou pastas vulneráveis no computador.",
+        "videoUrl": ""
+      }
+    ],
+    "wanspot": [
+      {
+        "id": "wan-1",
+        "title": "Central de Documentos e Contratos",
+        "desc": "O colaborador tem acesso a uma galeria digital contendo seus documentos pessoais e contratos de trabalho gerados pela empresa. Sempre que um novo contrato de alocação ou um contrato de aluguel de imóvel for firmado pelo responsável no Rakudash, o documento ficará imediatamente disponível para visualização e download no aplicativo.",
+        "videoUrl": ""
+      },
+      {
+        "id": "wan-2",
+        "title": "Visualização de Holerites",
+        "desc": "Após o fechamento do ciclo mensal de horas e pagamentos, o holerite detalhado é liberado no sistema. O funcionário acessa o aplicativo para conferir a quebra exata de seus ganhos, descontos e impostos no período, gerados de forma automática conforme as regras definidas para a empresa cliente.",
+        "videoUrl": ""
+      },
+      {
+        "id": "wan-3",
+        "title": "Pedido de Vale",
+        "desc": "Caso a empresa disponibilize a opção, o funcionário preenche um formulário de pedido de vale na plataforma WanSpot e a solicitação é enviada automaticamente para o painel de gestão do Rakudash. O status do pedido pode ser visualizado pelo funcionário, até que o pedido seja autorizado pelo responsável.",
+        "videoUrl": ""
+      },
+      {
+        "id": "wan-4",
+        "title": "Pedido de Yukyu",
+        "desc": "A solicitação de folgas remuneradas (Yukyu) é feita com autonomia pelo colaborador através do aplicativo. O Rakudash intercepta o pedido e cruza automaticamente as regras de elegibilidade da empresa, enviando ao responsável um pedido para aprovação em um clique, eliminando impressões de papéis e extravios.",
+        "videoUrl": ""
+      }
+    ]
   }
 }

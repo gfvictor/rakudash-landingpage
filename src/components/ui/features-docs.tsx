@@ -15,52 +15,45 @@ type System = {
   features: Feature[]
 }
 
+type TranslationFeature = {
+  id: string
+  title: string
+  desc: string
+  videoUrl: string
+}
+
 export const FeaturesDocs = () => {
   const { t } = useTranslation()
+
+  const entoriFeatures = t('features.entori', { returnObjects: true }) as TranslationFeature[]
+  const rakudashFeatures = t('features.rakudash', { returnObjects: true }) as TranslationFeature[]
+  const wanspotFeatures = t('features.wanspot', { returnObjects: true }) as TranslationFeature[]
+
+  const mapFeatures = (features: TranslationFeature[]): Feature[] => {
+    return features.map(f => ({
+      id: f.id,
+      title: f.title,
+      description: f.desc,
+      videoUrl: f.videoUrl || ''
+    }))
+  }
 
   const systemsData: System[] = [
     {
       id: 'entori',
       name: 'EnTori',
-      features: [
-        {
-          id: 'ent-1',
-          title: t('features.entori.feat1_title'),
-          description: t('features.entori.feat1_desc'),
-          videoUrl: 'https://rakudash.codifylab.app/entori-form.mp4',
-        },
-      ],
+      features: mapFeatures(entoriFeatures)
     },
     {
       id: 'rakudash',
       name: 'Rakudash',
-      features: [
-        {
-          id: 'rak-1',
-          title: t('features.rakudash.feat1_title'),
-          description: t('features.rakudash.feat1_desc'),
-          videoUrl: '',
-        },
-        {
-          id: 'rak-2',
-          title: t('features.rakudash.feat2_title'),
-          description: t('features.rakudash.feat2_desc'),
-          videoUrl: '',
-        },
-      ],
+      features: mapFeatures(rakudashFeatures)
     },
     {
       id: 'wanspot',
       name: 'WanSpot',
-      features: [
-        {
-          id: 'wan-1',
-          title: t('features.wanspot.feat1_title'),
-          description: t('features.wanspot.feat1_desc'),
-          videoUrl: '',
-        },
-      ],
-    },
+      features: mapFeatures(wanspotFeatures)
+    }
   ]
 
   const [activeSystem, setActiveSystem] = useState<string>(systemsData[0].id)
@@ -68,7 +61,6 @@ export const FeaturesDocs = () => {
   const [loopCount, setLoopCount] = useState(0)
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  // Recupera o objeto atualizado em cada render (pra pegar a tradução correta)
   const currentFeature =
     systemsData.flatMap((s) => s.features).find((f) => f.id === activeFeature.id) || activeFeature
 
@@ -95,7 +87,7 @@ export const FeaturesDocs = () => {
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-col px-6">
       <div className="mt-8 mb-12 flex flex-col items-center text-center">
-        <h1 className="text-foreground z-10 mb-4 text-4xl font-semibold tracking-tight md:text-5xl">
+        <h1 className="text-foreground z-10 mb-12 text-4xl font-semibold tracking-tight md:text-5xl">
           {t('features.title')}
         </h1>
         <p className="text-muted-foreground z-10 max-w-2xl text-lg">{t('features.subtitle')}</p>
@@ -104,7 +96,7 @@ export const FeaturesDocs = () => {
       <div className="border-border/40 bg-card z-10 mb-24 flex min-h-[75vh] w-full flex-col overflow-hidden rounded-2xl border shadow-sm lg:flex-row">
         <aside className="border-border/40 bg-muted/10 flex w-full shrink-0 flex-col gap-8 border-b p-6 lg:w-80 lg:border-r lg:border-b-0">
           <div>
-            <h2 className="tracking-tighti text-muted-foreground mb-6 text-center text-xl font-bold">
+            <h2 className="tracking-tighti text-muted-foreground mb-6 mt-8 text-center text-2xl font-bold">
               {t('features.sidebar_title')}
             </h2>
             <div className="flex flex-col gap-6">
@@ -122,7 +114,7 @@ export const FeaturesDocs = () => {
                       }}
                       className={`relative flex-1 rounded-xl py-3 text-center text-sm font-medium ${
                         isSystemActive
-                          ? 'text-foreground bg-background border-border/50 border shadow-sm'
+                          ? 'text-foreground bg-background border-border/50 border font-semibold shadow-sm'
                           : 'text-muted-foreground hover:text-foreground border border-transparent'
                       }`}
                     >
@@ -158,7 +150,7 @@ export const FeaturesDocs = () => {
 
         <main className="flex flex-1 flex-col p-8 lg:p-12">
           <div className="mb-10 max-w-3xl">
-            <h1 className="text-foreground mb-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h1 className="text-foreground mb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
               {currentFeature.title}
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed">
@@ -178,7 +170,7 @@ export const FeaturesDocs = () => {
                   playsInline
                   preload="none"
                   onEnded={handleVideoEnded}
-                  className="absolute inset-0 h-full w-full rounded-2xl object-cover"
+                  className="absolute inset-0 h-full w-full rounded-2xl object-cover dark:brightness-75 transition-all"
                 />
                 {loopCount >= 2 && (
                   <div
