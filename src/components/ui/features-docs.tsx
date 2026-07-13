@@ -30,6 +30,7 @@ export const FeaturesDocs = () => {
   const wanspotFeatures = t('features.wanspot', { returnObjects: true }) as TranslationFeature[]
 
   const mapFeatures = (features: TranslationFeature[]): Feature[] => {
+    if (!Array.isArray(features)) return []
     return features.map(f => ({
       id: f.id,
       title: f.title,
@@ -87,10 +88,10 @@ export const FeaturesDocs = () => {
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-col px-6">
       <div className="mt-8 mb-12 flex flex-col items-center text-center">
-        <h1 className="text-foreground z-10 mb-12 text-4xl font-semibold tracking-tight md:text-5xl">
+        <h1 className="text-foreground z-10 mb-12 text-4xl font-bold tracking-tight md:text-6xl">
           {t('features.title')}
         </h1>
-        <p className="text-muted-foreground z-10 max-w-2xl text-lg">{t('features.subtitle')}</p>
+        <p className="text-muted-foreground z-10 max-w-2xl font-medium whitespace-pre-line text-xl">{t('features.subtitle')}</p>
       </div>
 
       <div className="border-border/40 bg-card z-10 mb-24 flex min-h-[75vh] w-full flex-col overflow-hidden rounded-2xl border shadow-sm lg:flex-row">

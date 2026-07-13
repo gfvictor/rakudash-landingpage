@@ -86,7 +86,7 @@ export const EcosystemImpact = () => {
           <h2 className="text-foreground mb-12 text-3xl font-semibold tracking-tight whitespace-pre-line sm:text-4xl md:text-5xl">
             {t('metrics.title')}
           </h2>
-          <p className="text-muted-foreground text-lg font-medium">{t('metrics.subtitle')}</p>
+          <p className="text-muted-foreground text-xl font-medium">{t('metrics.subtitle')}</p>
         </div>
 
         <div className="mb-6 flex justify-center">
@@ -145,7 +145,7 @@ export const EcosystemImpact = () => {
                     <div className="bg-muted/90 dark:bg-muted/60 text-foreground rounded-xl p-2 sm:p-2.5">
                       {metric.icon}
                     </div>
-                    <span className="text-xs font-medium tracking-wider uppercase sm:text-sm">
+                    <span className="text-[10px] font-medium tracking-wider uppercase sm:text-sm">
                       {metric.label}
                     </span>
                   </div>
@@ -164,7 +164,7 @@ export const EcosystemImpact = () => {
           <h3 className="text-foreground mb-8 text-2xl font-semibold">{t('metrics.cta_title')}</h3>
           <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
             <Link
-              href="#contact"
+              href="/contact"
               className="bg-primary text-primary-foreground flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-center font-bold shadow-xl transition-all duration-300 hover:scale-105"
             >
               {t('metrics.cta_primary')}
