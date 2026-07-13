@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Controle Total da sua Haken Gaisha",
-    "subtitle": "Sistematize o ciclo completo da sua operação. Do recrutamento e contratos à gestão diária de folgas, vales e moradias, O Rakudash centraliza toda a adminitração da sua empresa e elimina de vez a dependência de planilhas dispersas e processos manuais sujeitos a falhas.",
+    "subtitle": "Sistematize o ciclo completo da sua operação. \nDo recrutamento e contratos à gestão diária de folgas, vales e moradias, O Rakudash centraliza toda a adminitração da sua empresa e elimina de vez a dependência de planilhas dispersas e processos manuais sujeitos a falhas.",
     "cta_primary": "Conhecer a Plataforma",
     "cta_secondary": "Agendar Demonstração"
   },
@@ -137,5 +137,59 @@
         "videoUrl": ""
       }
     ]
+  },
+  "footer": {
+    "copyright": "Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso"
+  },
+  "contact_page": {
+    "title": "Entre em Contato",
+    "subtitle": "Preencha o formulário abaixo para conversar com nossos especialistas.",
+    "fields": {
+      "company": "Nome da Empresa",
+      "person": "Responsável",
+      "email": "E-mail corporativo",
+      "phone": "Telefone",
+      "subject": "Assunto",
+      "message": "Mensagem"
+    },
+    "privacy_notice": "Ao enviar este formulário, você concorda com nossos Termos de Uso e <1>Política de Privacidade</1>.",
+    "sending": "Enviando...",
+    "submit": "Enviar Solicitação",
+    "success_title": "Mensagem Enviada",
+    "success_message": "Agradecemos o contato. Retornaremos o mais breve possível."
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "description": "A OpenScope coleta apenas os dados informados voluntariamente no formulário: nome da empresa, nome, e-mail, telefone e conteúdo da mensagem.",
+    "purpose": {
+      "title": "Finalidade do uso",
+      "content": "Os dados são utilizados exclusivamente para contato comercial ou resposta à solicitação enviada pelo usuário."
+    },
+    "storage": {
+      "title": "Armazenamento",
+      "content": "Os dados não são armazenados em banco de dados. As informações são enviadas apenas por e-mail."
+    },
+    "sharing": {
+      "title": "Compartilhamento",
+      "content": "Os dados não são compartilhados com terceiros, parceiros ou serviços externos."
+    },
+    "security": {
+      "title": "Segurança",
+      "content": "Medidas técnicas razoáveis são adotadas para proteger os dados durante a transmissão."
+    },
+    "rights": {
+      "title": "Direitos do usuário",
+      "content": "O usuário pode solicitar a exclusão dos dados enviados ou esclarecimentos a qualquer momento."
+    },
+    "contact": {
+      "title": "Contato",
+      "content": "Canal de contato da OpenScope para assuntos relacionados à privacidade."
+    },
+    "recommendations": {
+      "lastUpdated": "Última Atualização: 16 de fevereiro de 2026",
+      "jurisdiction": "Indicação da jurisdição aplicável (Japão)"
+    }
   }
 }

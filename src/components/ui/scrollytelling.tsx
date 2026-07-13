@@ -327,10 +327,10 @@ export function Scrollytelling() {
                       : 'pointer-events-none z-0 translate-y-12 opacity-0'
                 }`}
               >
-                <h3 className="text-foreground mb-12 text-left text-3xl font-semibold tracking-tight whitespace-pre-line md:text-5xl">
+                <h3 className="text-foreground mb-12 text-center text-3xl font-semibold tracking-tight whitespace-pre-line md:text-5xl">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground text-left text-2xl leading-relaxed">
+                <p className="text-muted-foreground text-center font-medium text-xl leading-relaxed md:text-2xl">
                   {step.description}
                 </p>
               </div>

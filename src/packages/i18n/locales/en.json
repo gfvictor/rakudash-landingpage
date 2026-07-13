@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Total Control for your Haken Gaisha",
-    "subtitle": "Systematize the entire lifecycle of your operation. From recruitment and contracts to the daily management of time-offs, cash advances, and housing, Rakudash centralizes your company's administration and permanently eliminates the dependency on scattered spreadsheets and error-prone manual processes.",
+    "subtitle": "Systematize the entire lifecycle of your operation. \nFrom recruitment and contracts to the daily management of time-offs, cash advances, and housing, Rakudash centralizes your company's administration and permanently eliminates the dependency on scattered spreadsheets and error-prone manual processes.",
     "cta_primary": "Explore the Platform",
     "cta_secondary": "Schedule a Demo"
   },
@@ -49,7 +49,7 @@
   },
   "features": {
     "title": "Detailed Overview",
-    "subtitle": "Explore the core features of our ecosystem and understand how each tool simplifies your daily operations.",
+    "subtitle": "Explore the core features of our ecosystem \nand understand how each tool simplifies your daily operations.",
     "sidebar_title": "Features",
     "video_pending": "Demo video pending",
     "video_replay": "Watch again",
@@ -137,5 +137,59 @@
         "videoUrl": ""
       }
     ]
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "contact_page": {
+    "title": "Contact Us",
+    "subtitle": "Fill out the form below to talk to our experts.",
+    "fields": {
+      "company": "Company Name",
+      "person": "Person in Charge",
+      "email": "Corporate Email",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "privacy_notice": "By submitting this form, you agree to our Terms of Use and <1>Privacy Policy</1>.",
+    "sending": "Sending...",
+    "submit": "Submit Request",
+    "success_title": "Message Sent",
+    "success_message": "Thank you for contacting us. We will get back to you as soon as possible."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "OpenScope only collects data voluntarily provided in the form: company name, name, email, phone and message content.",
+    "purpose": {
+      "title": "Purpose of use",
+      "content": "The data is used exclusively for commercial contact or responding to the request sent by the user."
+    },
+    "storage": {
+      "title": "Storage",
+      "content": "The data is not stored in a database. The information is sent only by email."
+    },
+    "sharing": {
+      "title": "Sharing",
+      "content": "The data is not shared with third parties, partners or external services."
+    },
+    "security": {
+      "title": "Security",
+      "content": "Reasonable technical measures are adopted to protect data during transmission."
+    },
+    "rights": {
+      "title": "User rights",
+      "content": "The user can request the deletion of the sent data or clarification at any time."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "OpenScope contact channel for privacy-related matters."
+    },
+    "recommendations": {
+      "lastUpdated": "Last Updated: February 16, 2026",
+      "jurisdiction": "Indication of applicable jurisdiction (Japan)"
+    }
   }
 }

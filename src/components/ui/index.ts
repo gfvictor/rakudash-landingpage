@@ -6,3 +6,5 @@ export * from './scrollytelling'
 export * from './ecosystem-impact'
 export * from './features-docs'
 export * from './neural-background'
+export * from "./footer"
+export * from './privacy-modal'
