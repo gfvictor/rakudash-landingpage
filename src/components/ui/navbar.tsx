@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { usePathname } from 'next/navigation'
 import { ThemeToggle, LanguageToggle } from '@/actions'
+import { OpenScopeLogo } from '@/components/ui/openscope-logo'
 
 export function Navbar() {
   const { t } = useTranslation()
@@ -37,12 +38,8 @@ export function Navbar() {
       <header className="bg-background/80 sticky top-0 z-50 w-full py-3 backdrop-blur-md sm:py-4">
         <div className="relative container mx-auto flex items-center justify-between px-4 md:px-8">
           <div>
-            <Link href="/" className="inline-flex items-center gap-2 no-underline">
-              <img
-                src="/img/icon-192x192.png"
-                alt="OpenScope"
-                className="h-7 sm:h-8 md:h-10 dark:brightness-110"
-              />
+            <Link href="/" className="inline-flex items-center gap-2 no-underline" aria-label="OpenScope">
+              <OpenScopeLogo className="h-7 w-auto sm:h-8 md:h-10 text-foreground transition-transform hover:scale-105" />
             </Link>
           </div>
 
@@ -50,10 +47,10 @@ export function Navbar() {
             <Link href="/" className={linkClass('/')}>
               {t('navbar.home')}
             </Link>
-            <Link href="#features" className={linkClass('#features')}>
+            <Link href="/features" className={linkClass('/features')}>
               {t('navbar.features')}
             </Link>
-            <Link href="#contact" className={linkClass('#contact')}>
+            <Link href="/contact" className={linkClass('/contact')}>
               {t('navbar.contact')}
             </Link>
           </nav>
@@ -92,10 +89,10 @@ export function Navbar() {
           <Link href="/" onClick={closeMenu} className="text-3xl tracking-tight">
             {t('navbar.home')}
           </Link>
-          <Link href="#features" onClick={closeMenu} className="text-3xl tracking-tight">
+          <Link href="/features" onClick={closeMenu} className="text-3xl tracking-tight">
             {t('navbar.features')}
           </Link>
-          <Link href="#contact" onClick={closeMenu} className="text-3xl tracking-tight">
+          <Link href="/contact" onClick={closeMenu} className="text-3xl tracking-tight">
             {t('navbar.contact')}
           </Link>
 
