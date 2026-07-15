@@ -31,11 +31,11 @@ export const FeaturesDocs = () => {
 
   const mapFeatures = (features: TranslationFeature[]): Feature[] => {
     if (!Array.isArray(features)) return []
-    return features.map(f => ({
+    return features.map((f) => ({
       id: f.id,
       title: f.title,
       description: f.desc,
-      videoUrl: f.videoUrl || ''
+      videoUrl: f.videoUrl || '',
     }))
   }
 
@@ -43,18 +43,18 @@ export const FeaturesDocs = () => {
     {
       id: 'entori',
       name: 'EnTori',
-      features: mapFeatures(entoriFeatures)
+      features: mapFeatures(entoriFeatures),
     },
     {
       id: 'rakudash',
       name: 'Rakudash',
-      features: mapFeatures(rakudashFeatures)
+      features: mapFeatures(rakudashFeatures),
     },
     {
       id: 'wanspot',
       name: 'WanSpot',
-      features: mapFeatures(wanspotFeatures)
-    }
+      features: mapFeatures(wanspotFeatures),
+    },
   ]
 
   const [activeSystem, setActiveSystem] = useState<string>(systemsData[0].id)
@@ -91,13 +91,15 @@ export const FeaturesDocs = () => {
         <h1 className="text-foreground z-10 mb-12 text-4xl font-bold tracking-tight md:text-6xl">
           {t('features.title')}
         </h1>
-        <p className="text-muted-foreground z-10 max-w-2xl font-medium whitespace-pre-line text-xl">{t('features.subtitle')}</p>
+        <p className="text-muted-foreground z-10 max-w-2xl text-xl font-medium whitespace-pre-line">
+          {t('features.subtitle')}
+        </p>
       </div>
 
       <div className="border-border/40 bg-card z-10 mb-24 flex min-h-[75vh] w-full flex-col overflow-hidden rounded-2xl border shadow-sm lg:flex-row">
         <aside className="border-border/40 bg-muted/10 flex w-full shrink-0 flex-col gap-8 border-b p-6 lg:w-80 lg:border-r lg:border-b-0">
           <div>
-            <h2 className="tracking-tighti text-muted-foreground mb-6 mt-8 text-center text-2xl font-bold">
+            <h2 className="tracking-tighti text-muted-foreground mt-8 mb-6 text-center text-2xl font-bold">
               {t('features.sidebar_title')}
             </h2>
             <div className="flex flex-col gap-6">
@@ -171,7 +173,7 @@ export const FeaturesDocs = () => {
                   playsInline
                   preload="none"
                   onEnded={handleVideoEnded}
-                  className="absolute inset-0 h-full w-full rounded-2xl object-cover dark:brightness-75 transition-all"
+                  className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-all dark:brightness-75"
                 />
                 {loopCount >= 2 && (
                   <div

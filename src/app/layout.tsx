@@ -2,6 +2,8 @@ import { Geist, Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { ThemeProvider, I18nProvider } from '@/providers'
+import { Navbar } from '@/components/ui/navbar'
+import { Footer } from '@/components/ui/footer'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const geistSans = Geist({
@@ -10,9 +12,8 @@ const geistSans = Geist({
 })
 
 export const metadata = {
-  title: 'Rakudash | 高パフォーマンスな運用のための統合管理。',
-  description:
-    'Rakudashは、分散したデータを一元化し、採用パイプラインを最適化して、管理業務を自動化します。',
+  title: 'OpenScope',
+  description: 'Sistematização, automação e integração de dados.',
 }
 
 export default async function RootLayout({
@@ -29,13 +30,14 @@ export default async function RootLayout({
           geistSans.variable,
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <I18nProvider>{children}</I18nProvider>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <I18nProvider>
+            <div className="flex min-h-[100dvh] flex-col">
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+          </I18nProvider>
         </ThemeProvider>
       </body>
     </html>
