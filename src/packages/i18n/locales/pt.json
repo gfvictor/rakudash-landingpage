@@ -6,7 +6,17 @@
   "navbar": {
     "home": "Início",
     "features": "Recursos",
-    "contact": "Contato"
+    "contact": "Contato",
+    "about": "Sobre Nós",
+    "products": "Produtos",
+    "rakudash": "Rakudash"
+  },
+  "page_titles": {
+    "home": "Início",
+    "products": "Produtos",
+    "about": "Sobre Nós",
+    "contact": "Contato",
+    "features": "Recursos"
   },
   "hero": {
     "title": "Controle Total da sua Haken Gaisha",
@@ -141,7 +151,9 @@
   "footer": {
     "copyright": "Todos os direitos reservados.",
     "privacy": "Política de Privacidade",
-    "terms": "Termos de Uso"
+    "terms": "Termos de Uso",
+    "slogan": "Sistematização. \nAutomação. \nIntegração de Dados.",
+    "sitemap": "Navegação"
   },
   "contact_page": {
     "title": "Entre em Contato",
@@ -190,6 +202,67 @@
     "recommendations": {
       "lastUpdated": "Última Atualização: 16 de fevereiro de 2026",
       "jurisdiction": "Indicação da jurisdição aplicável (Japão)"
+    }
+  },
+  "openscope_home": {
+    "title": "Sua Operação. Elevada à Máxima Eficiência.",
+    "subtitle": "Desenvolvemos sistemas sob medida e plataformas inteligentes que eliminam o trabalho braçal, integram seus dados e preparam sua infraestrutura para escalar sem gargalos.",
+    "cta_rakudash": "Conhecer o Rakudash",
+    "problem": {
+      "title": "O Problema",
+      "description": "Muitas empresas ainda dependem de planilhas descentralizadas, papel e processos manuais. Isso gera retrabalho, erros operacionais, dados desencontrados e falhas de comunicação. Com o crescimento da operação, esses problemas se multiplicam."
+    },
+    "solution": {
+      "title": "A Solução",
+      "description": "A OpenScope é especializada em sistematizar e automatizar processos B2B. Centralizamos informações, padronizamos fluxos e integramos dados críticos em um único ecossistema, reduzindo falhas humanas e aumentando a eficiência operacional."
+    },
+    "clients": {
+      "title": "Empresas que confiam na OpenScope"
+    },
+    "target": {
+      "title": "Perfil Ideal",
+      "subtitle": "Nosso ecossistema é perfeitamente dimensionado para empresas que:",
+      "list": [
+        "Gerenciam grande volume de funcionários ou clientes",
+        "Trabalham com operações distribuídas ou remotas",
+        "Sofrem com processos manuais ou descentralizados",
+        "Precisam de mais controle, rastreabilidade e organização"
+      ]
+    },
+    "how_we_work": {
+      "title": "Como Trabalhamos",
+      "description": "Analisamos os processos atuais da empresa, identificamos gargalos e desenhamos a solução ideal. Após a implementação, os dados passam a fluir de forma integrada entre escritório e funcionários."
+    }
+  },
+  "about_page": {
+    "title": "Sobre a OpenScope",
+    "subtitle": "Elevando o padrão operacional de empresas através de tecnologia inteligente.",
+    "who_we_are": {
+      "title": "Quem Somos",
+      "description": "Somos uma empresa de tecnologia especializada em resolver ineficiências operacionais complexas. Nosso foco é desenvolver sistemas sob medida e plataformas SaaS que substituem processos manuais falhos por arquiteturas de dados robustas, seguras e automatizadas."
+    },
+    "mission": {
+      "title": "Missão",
+      "description": "Sistematizar, automatizar e integrar os dados dos nossos clientes, garantindo escalabilidade e controle absoluto de suas operações."
+    },
+    "vision": {
+      "title": "Visão",
+      "description": "Ser a parceira tecnológica B2B definitiva para empresas que buscam modernização estrutural no Japão."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "list": [
+        "Precisão Absoluta",
+        "Foco em Eficiência",
+        "Inovação Pragmática",
+        "Parceria Estratégica"
+      ]
+    },
+    "founder": {
+      "name": "Vinicius Nakamura Goes",
+      "kana": "",
+      "role": "Founder e Líder Técnico",
+      "bio": "\"Sou engenheiro de sistemas e busco usar minhas habilidades para melhorar processos de trabalho empresarial. Com ampla experiência em sistematização de haken, decidi criar a OpenScope e atender as empresas atacando as dores em comum entre todas: a falta de integração e comunicação entre escritório e funcionários.\""
     }
   }
 }

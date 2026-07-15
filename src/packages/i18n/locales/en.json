@@ -6,7 +6,10 @@
   "navbar": {
     "home": "Home",
     "features": "Features",
-    "contact": "Contact"
+    "contact": "Contact",
+    "about": "About Us",
+    "products": "Products",
+    "rakudash": "Rakudash"
   },
   "hero": {
     "title": "Total Control for your Haken Gaisha",
@@ -141,7 +144,9 @@
   "footer": {
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
+    "terms": "Terms of Use",
+    "slogan": "Systematization. \nAutomation. \nData Integration.",
+    "sitemap": "Sitemap"
   },
   "contact_page": {
     "title": "Contact Us",
@@ -190,6 +195,74 @@
     "recommendations": {
       "lastUpdated": "Last Updated: February 16, 2026",
       "jurisdiction": "Indication of applicable jurisdiction (Japan)"
+    }
+  },
+  "openscope_home": {
+    "title": "Your Operation. Elevated to Maximum Efficiency.",
+    "subtitle": "We develop custom systems and intelligent platforms that eliminate manual labor, integrate your data, and prepare your infrastructure to scale without bottlenecks.",
+    "cta_rakudash": "Discover Rakudash",
+    "problem": {
+      "title": "The Problem",
+      "description": "Many companies still rely on decentralized spreadsheets, paper, and manual processes. This generates rework, operational errors, mismatched data, and communication failures. As the operation grows, these problems multiply."
+    },
+    "solution": {
+      "title": "The Solution",
+      "description": "OpenScope specializes in systematizing and automating B2B processes. We centralize information, standardize flows, and integrate critical data into a single ecosystem, reducing human failures and increasing operational efficiency."
+    },
+    "clients": {
+      "title": "Trusted by industry leaders"
+    },
+    "target": {
+      "title": "Ideal Profile",
+      "subtitle": "Our ecosystem is perfectly scaled for companies that:",
+      "list": [
+        "Manage large volumes of employees or clients",
+        "Operate with distributed or remote teams",
+        "Suffer from manual or decentralized processes",
+        "Require more control, traceability, and organization"
+      ]
+    },
+    "how_we_work": {
+      "title": "How we work",
+      "description": "We analyze the company's current processes, identify bottlenecks and design the ideal solution. After implementation, data begins to flow in an integrated way between the office and employees."
+    }
+  },
+  "page_titles": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "features": "Features"
+  },
+  "about_page": {
+    "title": "About OpenScope",
+    "subtitle": "Elevating the operational standard of companies through intelligent technology.",
+    "who_we_are": {
+      "title": "Who We Are",
+      "description": "We are a technology company specialized in solving complex operational inefficiencies. Our focus is on developing custom systems and SaaS platforms that replace flawed manual processes with robust, secure, and automated data architectures."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To systematize, automate, and integrate our clients' data, ensuring scalability and absolute control over their operations."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To be the definitive B2B technology partner for companies seeking structural modernization in Japan."
+    },
+    "values": {
+      "title": "Our Values",
+      "list": [
+        "Absolute Precision",
+        "Focus on Efficiency",
+        "Pragmatic Innovation",
+        "Strategic Partnership"
+      ]
+    },
+    "founder": {
+      "name": "Vinicius Nakamura Goes",
+      "kana": "",
+      "role": "Founder and Technical Leader",
+      "bio": "\"I am a systems engineer and I seek to use my skills to improve business work processes. With extensive experience in haken systematization, I decided to create OpenScope to serve companies by addressing common pain points: the lack of integration and communication between the office and employees.\""
     }
   }
 }
