@@ -15,10 +15,10 @@ export async function sendContactEmail(formData: FormData) {
       message: formData.get('message'),
     }
 
-    const destinationEmail = 'contact@openscope-systems.com' 
+    const destinationEmail = 'contact@openscope-systems.com'
 
     const { data: resendData, error } = await resend.emails.send({
-      from: 'Rakudash Contact <onboarding@resend.dev>', 
+      from: 'Rakudash Contact <onboarding@resend.dev>',
       to: [destinationEmail],
       subject: `[Rakudash LP] Novo Contato: ${data.subject}`,
       html: `
@@ -36,12 +36,12 @@ export async function sendContactEmail(formData: FormData) {
 
     if (error) {
       console.error('Resend error:', error)
-      return { success: false, error: 'Falha ao enviar e-mail' }
+      return { success: false, error: 'Failed to send e-mail' }
     }
 
     return { success: true }
   } catch (error) {
     console.error('Server Action Error:', error)
-    return { success: false, error: 'Ocorreu um erro inesperado' }
+    return { success: false, error: 'An unexpected error has occurred' }
   }
 }
