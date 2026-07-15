@@ -16,7 +16,7 @@ import {
 } from 'lucide-react'
 
 const ExcelChaos = () => (
-  <div className="bg-background border-border relative flex h-full w-full items-center justify-center overflow-hidden rounded-2xl border p-6 shadow-xl">
+  <div className="bg-background border-primary/30 relative flex h-full w-full items-center justify-center overflow-hidden rounded-2xl border p-6 shadow-xl">
     <div
       className="absolute inset-0 opacity-10"
       style={{
@@ -180,7 +180,7 @@ const EcosystemView = () => (
       <div className="mb-2 h-1 w-8 rounded-full bg-neutral-300 dark:bg-neutral-600" />
     </div>
 
-    <div className="bg-background border-border z-20 flex h-36 w-44 shrink-0 -translate-y-4 flex-col overflow-hidden rounded-xl border shadow-[0_0_40px_rgba(var(--primary),0.2)] transition-transform hover:scale-105 sm:h-52 sm:w-64 sm:-translate-y-6 dark:border-neutral-700">
+    <div className="bg-background border-primary/30 z-20 flex h-36 w-44 shrink-0 -translate-y-4 flex-col overflow-hidden rounded-xl border shadow-[0_0_40px_rgba(var(--primary),0.2)] transition-transform hover:scale-105 sm:h-52 sm:w-64 sm:-translate-y-6">
       <div className="bg-muted/30 border-border flex h-6 w-full items-center gap-1.5 border-b px-3">
         <div className="h-2.5 w-2.5 rounded-full bg-red-400" />
         <div className="h-2.5 w-2.5 rounded-full bg-amber-400" />
@@ -314,7 +314,7 @@ export function Scrollytelling() {
       style={{ height: `${steps.length * 100}vh` }}
     >
       <div className="sticky top-16 flex h-[calc(100vh-4rem)] w-full flex-col overflow-hidden md:flex-row">
-        <div className="flex h-1/2 w-full items-center justify-center p-6 md:h-full md:w-1/2 md:p-16">
+        <div className="flex h-1/2 w-full items-center justify-center p-6 md:h-full md:w-1/2 md:justify-end md:pr-16 lg:pr-24">
           <div className="relative h-40 w-full max-w-lg md:h-64">
             {steps.map((step, index) => (
               <div
@@ -327,7 +327,7 @@ export function Scrollytelling() {
                       : 'pointer-events-none z-0 translate-y-12 opacity-0'
                 }`}
               >
-                <h3 className="text-foreground mb-12 text-center text-3xl font-semibold tracking-tight whitespace-pre-line md:text-5xl">
+                <h3 className="text-foreground mb-8 text-center text-3xl font-semibold tracking-tight whitespace-pre-line md:text-5xl">
                   {step.title}
                 </h3>
                 <p className="text-muted-foreground text-center text-xl leading-relaxed font-medium md:text-2xl">
@@ -338,7 +338,7 @@ export function Scrollytelling() {
           </div>
         </div>
 
-        <div className="bg-muted/10 border-border/40 flex h-1/2 w-full items-center justify-center border-l p-6 md:h-full md:w-1/2 md:p-16">
+        <div className="bg-muted/10 border-border/40 flex h-1/2 w-full items-center justify-center border-t md:border-t-0 md:border-l p-6 md:h-full md:w-1/2 md:justify-start md:pl-16 lg:pl-24">
           <div className="relative flex aspect-video w-full max-w-lg items-center justify-center md:aspect-square">
             <div
               className={`absolute inset-0 transition-opacity duration-1000 ${activeStep === 0 ? 'z-10 opacity-100' : 'pointer-events-none z-0 opacity-0'}`}
