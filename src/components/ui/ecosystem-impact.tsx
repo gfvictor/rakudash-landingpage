@@ -170,7 +170,7 @@ export const EcosystemImpact = () => {
               {t('metrics.cta_primary')}
             </Link>
             <Link
-              href="/features"
+              href="/products/rakudash/features"
               className="bg-background border-border text-foreground hover:bg-muted/50 flex items-center justify-center gap-2 rounded-xl border px-8 py-4 text-center font-bold shadow-sm transition-all duration-300"
             >
               {t('metrics.cta_secondary')}
