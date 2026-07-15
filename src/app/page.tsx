@@ -132,7 +132,7 @@ export default function OpenScopeHome() {
           </div>
         </section>
 
-        <section className="bg-card/30 border-border/40 relative w-full overflow-hidden border-t py-16 sm:py-24">
+        <section className="bg-background border-border/40 relative w-full overflow-hidden border-t py-16 sm:py-24">
           <div className="container mx-auto px-4 md:px-8">
             <div className="mb-10 sm:mb-16">
               <h2 className="text-muted-foreground text-center text-sm font-bold tracking-widest uppercase">
@@ -140,7 +140,7 @@ export default function OpenScopeHome() {
               </h2>
             </div>
 
-            <div className="group relative flex overflow-x-hidden">
+            <div className="group relative flex overflow-x-hidden max-w-5xl mx-auto">
               <div className="animate-scroll flex items-center py-4 whitespace-nowrap">
                 {[...Array(6)].map((_, i) => (
                   <div key={i} className="flex items-center gap-16 px-8 md:gap-32 md:px-16">
