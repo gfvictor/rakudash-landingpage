@@ -60,6 +60,8 @@
   "features": {
     "title": "Visão Detalhada",
     "subtitle": "Explore as principais funcionalidades do nosso ecossistema e entenda como cada ferramenta simplifica a sua operação diária.",
+    "docs_link_prefix": "Para ver o manual completo, acesse a ",
+    "docs_link_anchor": "documentação.",
     "sidebar_title": "Recursos",
     "video_pending": "Vídeo demonstrativo pendente",
     "video_replay": "Assistir novamente",
@@ -82,25 +84,25 @@
         "id": "rak-1",
         "title": "Ciclo de Vida do Colaborador",
         "desc": "O painel concentra a jornada administrativa do funcionário em um fluxo unificado. O responsável pode aprovar admissões puxadas do EnTori, cadastrar e monitorar dependentes e seguros sociais (Shakai Hoken e Koyo Hoken), processar transferências entre alocações (Idou) e gerar os documentos necessários para o desligamento (Taisha).",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/rakudash-cicle.mp4?v=3"
       },
       {
         "id": "rak-2",
         "title": "Exportação de Currículos",
         "desc": "A partir das informações e licenças cadastradas no perfil do candidato, o responsável pode gerar um currículo formatado em PDF ou Excel com apenas um clique. A exportação utiliza templates de currículo configurados pela própria agência para auto-completar os campos e apresentar aos clientes.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/rakudash-curriculum.mp4"
       },
       {
         "id": "rak-3",
         "title": "Módulo de Habitação (Shitaku)",
         "desc": "O painel disponibiliza uma aba dedicada para a gestão das propriedades alugadas pela empresa. O responsável vincula funcionários aos imóveis, monitora contratos de moradia em vigência e registra as despesas mensais (como água, luz e gás), cujo rateio é automaticamente adicionado aos descontos da folha de pagamento.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/rakudash-apartments.mp4"
       },
       {
         "id": "rak-4",
         "title": "Gestão de Empresas Clientes",
         "desc": "A administração das empresas clientes é feita individualmente. O responsável cadastra as regras de horário de entrada e saída, cálculo de horas extras e departamentos. A estrutura organizacional do cliente espelha turnos e setores para garantir a correta alocação e cálculo de frequência.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/rakudash-clients.mp4"
       },
       {
         "id": "rak-5",
@@ -112,13 +114,13 @@
         "id": "rak-6",
         "title": "Lotes de Férias e Folgas",
         "desc": "O processo de concessão de férias remuneradas (Yukyu) obedece à legislação japonesa, creditando lotes de folga automaticamente após o período de carência. O painel unifica esses dados para exibir ao responsável o balanço de dias disponíveis, permitindo também o monitoramento e aprovação de pedidos vindos do WanSpot.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/rakudash-leaves.mp4"
       },
       {
         "id": "rak-7",
         "title": "Arquivo Digital Seguro",
         "desc": "O sistema inclui um repositório centralizado em nuvem para o armazenamento da documentação da operação. O responsável pode fazer a importação e exportação de dados e cadastros sensíveis, evitando a dependência de arquivos de papel ou pastas vulneráveis no computador.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/rakudash-archives.mp4"
       }
     ],
     "wanspot": [
@@ -126,25 +128,25 @@
         "id": "wan-1",
         "title": "Central de Documentos e Contratos",
         "desc": "O colaborador tem acesso a uma galeria digital contendo seus documentos pessoais e contratos de trabalho gerados pela empresa. Sempre que um novo contrato de alocação ou um contrato de aluguel de imóvel for firmado pelo responsável no Rakudash, o documento ficará imediatamente disponível para visualização e download no aplicativo.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/wanspot-documents.mp4?v=3"
       },
       {
         "id": "wan-2",
         "title": "Visualização de Holerites",
         "desc": "Após o fechamento do ciclo mensal de horas e pagamentos, o holerite detalhado é liberado no sistema. O funcionário acessa o aplicativo para conferir a quebra exata de seus ganhos, descontos e impostos no período, gerados de forma automática conforme as regras definidas para a empresa cliente.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/wanspot-payslip.mp4?v=3"
       },
       {
         "id": "wan-3",
         "title": "Pedido de Vale",
         "desc": "Caso a empresa disponibilize a opção, o funcionário preenche um formulário de pedido de vale na plataforma WanSpot e a solicitação é enviada automaticamente para o painel de gestão do Rakudash. O status do pedido pode ser visualizado pelo funcionário, até que o pedido seja autorizado pelo responsável.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/wanspot-advance.mp4?v=3"
       },
       {
         "id": "wan-4",
         "title": "Pedido de Yukyu",
         "desc": "A solicitação de folgas remuneradas (Yukyu) é feita com autonomia pelo colaborador através do aplicativo. O Rakudash intercepta o pedido e cruza automaticamente as regras de elegibilidade da empresa, enviando ao responsável um pedido para aprovação em um clique, eliminando impressões de papéis e extravios.",
-        "videoUrl": ""
+        "videoUrl": "https://rakudash.codifylab.app/wanspot-leaves.mp4?v=3"
       }
     ]
   },
@@ -166,7 +168,7 @@
       "subject": "Assunto",
       "message": "Mensagem"
     },
-    "privacy_notice": "Ao enviar este formulário, você concorda com nossos Termos de Uso e <1>Política de Privacidade</1>.",
+    "privacy_notice": "Ao enviar este formulário, você concorda com nossos <1>Termos de Uso</1> e <2>Política de Privacidade</2>.",
     "sending": "Enviando...",
     "submit": "Enviar Solicitação",
     "success_title": "Mensagem Enviada",
@@ -202,6 +204,22 @@
     "recommendations": {
       "lastUpdated": "Última Atualização: 16 de fevereiro de 2026",
       "jurisdiction": "Indicação da jurisdição aplicável (Japão)"
+    }
+  },
+  "terms": {
+    "title": "Termos de Uso",
+    "description": "Estes Termos de Uso regulam o acesso e a utilização dos serviços oferecidos pela OpenScope.",
+    "acceptance": {
+      "title": "1. Aceitação",
+      "content": "Ao utilizar nossos serviços ou enviar formulários de contato, você concorda automaticamente com estes termos. Caso discorde de alguma cláusula, pedimos que não utilize a plataforma."
+    },
+    "usage": {
+      "title": "2. Condições de Uso",
+      "content": "A plataforma deve ser utilizada apenas para os fins descritos. É proibida qualquer tentativa de violação da segurança, envio de spam ou inserção de dados fraudulentos."
+    },
+    "modifications": {
+      "title": "3. Modificações",
+      "content": "A OpenScope reserva-se o direito de atualizar estes termos a qualquer momento. Modificações entram em vigor imediatamente após sua publicação no site."
     }
   },
   "openscope_home": {
@@ -263,6 +281,12 @@
       "kana": "",
       "role": "Founder e Líder Técnico",
       "bio": "\"Sou engenheiro de sistemas e busco usar minhas habilidades para melhorar processos de trabalho empresarial. Com ampla experiência em sistematização de haken, decidi criar a OpenScope e atender as empresas atacando as dores em comum entre todas: a falta de integração e comunicação entre escritório e funcionários.\""
+    },
+    "ui_lead": {
+      "name": "Victor Gama de Farias",
+      "kana": "",
+      "role": "Responsável por UI/UX e Frontend",
+      "bio": "\"O visual é tão importante quanto o motor. Minha paixão por detalhes me move a criar interfaces que realmente importam. Me dedico a oferecer um produto robusto e completo sob o capô, mas incrivelmente simples e intuitivo para o usuário final.\""
     }
   }
 }

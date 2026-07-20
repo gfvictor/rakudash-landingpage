@@ -94,6 +94,17 @@ export const FeaturesDocs = () => {
         <p className="text-muted-foreground z-10 max-w-2xl text-xl font-medium whitespace-pre-line">
           {t('features.subtitle')}
         </p>
+        <p className="text-muted-foreground z-10 mt-2 max-w-2xl text-lg">
+          {t('features.docs_link_prefix')}
+          <a
+            href={process.env.NEXT_PUBLIC_OPENSCOPE_DOCS || '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-primary/70 font-bold transition-colors duration-200"
+          >
+            {t('features.docs_link_anchor')}
+          </a>
+        </p>
       </div>
 
       <div className="border-border/40 bg-card z-10 mb-24 flex min-h-[75vh] w-full flex-col overflow-hidden rounded-2xl border shadow-sm lg:flex-row">
@@ -161,7 +172,11 @@ export const FeaturesDocs = () => {
             </p>
           </div>
 
-          <div className="bg-muted border-border/40 group relative flex aspect-[4/3] w-full max-w-4xl items-center justify-center overflow-hidden rounded-2xl border shadow-sm">
+          <div
+            className={`bg-muted border-border/40 group relative flex w-full max-w-4xl items-center justify-center overflow-hidden rounded-2xl border shadow-sm ${
+              currentFeature.id.startsWith('wan-') ? 'aspect-[2/1]' : 'aspect-[4/3]'
+            }`}
+          >
             {currentFeature.videoUrl ? (
               <>
                 <video
@@ -175,6 +190,7 @@ export const FeaturesDocs = () => {
                   onEnded={handleVideoEnded}
                   className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-all dark:brightness-75"
                 />
+                <div className="border-border pointer-events-none absolute inset-0 z-10 rounded-2xl border-2" />
                 {loopCount >= 2 && (
                   <div
                     className="bg-background/50 group/replay absolute inset-0 z-20 flex cursor-pointer flex-col items-center justify-center backdrop-blur-sm transition-all"
