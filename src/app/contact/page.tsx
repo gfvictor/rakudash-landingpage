@@ -1,6 +1,6 @@
 'use client'
 
-import { Navbar, Footer, NeuralNetworkBackground, PrivacyModal, PageTitle } from '@/ui'
+import { Navbar, Footer, NeuralNetworkBackground, PrivacyModal, TermsModal, PageTitle } from '@/ui'
 import { sendContactEmail } from '@/components/actions/send-email'
 import { useTranslation, Trans } from 'react-i18next'
 import { useState } from 'react'
@@ -10,6 +10,7 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false)
   const [isFormValid, setIsFormValid] = useState(false)
 
   const [formData, setFormData] = useState({
@@ -212,6 +213,16 @@ export default function ContactPage() {
                                 type="button"
                                 onClick={(e) => {
                                   e.preventDefault()
+                                  setIsTermsModalOpen(true)
+                                }}
+                                className="text-primary focus:ring-primary/50 rounded font-medium hover:underline focus:ring-2 focus:outline-none"
+                              />
+                            ),
+                            2: (
+                              <button
+                                type="button"
+                                onClick={(e) => {
+                                  e.preventDefault()
                                   setIsPrivacyModalOpen(true)
                                 }}
                                 className="text-primary focus:ring-primary/50 rounded font-medium hover:underline focus:ring-2 focus:outline-none"
@@ -235,6 +246,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
+      <TermsModal isOpen={isTermsModalOpen} onClose={() => setIsTermsModalOpen(false)} />
       <PrivacyModal isOpen={isPrivacyModalOpen} onClose={() => setIsPrivacyModalOpen(false)} />
     </>
   )

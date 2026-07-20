@@ -3,11 +3,12 @@
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
 import { useState } from 'react'
-import { OpenScopeLogo, PrivacyModal } from '@/ui'
+import { OpenScopeLogo, PrivacyModal, TermsModal } from '@/ui'
 
 export const Footer = () => {
   const { t } = useTranslation()
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false)
 
   return (
     <>
@@ -77,14 +78,18 @@ export const Footer = () => {
               >
                 {t('footer.privacy')}
               </button>
-              <Link href="#" className="hover:text-foreground transition-colors">
+              <button
+                onClick={() => setIsTermsModalOpen(true)}
+                className="hover:text-foreground cursor-pointer transition-colors"
+              >
                 {t('footer.terms')}
-              </Link>
+              </button>
             </div>
           </div>
         </div>
       </footer>
       <PrivacyModal isOpen={isPrivacyModalOpen} onClose={() => setIsPrivacyModalOpen(false)} />
+      <TermsModal isOpen={isTermsModalOpen} onClose={() => setIsTermsModalOpen(false)} />
     </>
   )
 }

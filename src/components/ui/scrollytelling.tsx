@@ -338,7 +338,7 @@ export function Scrollytelling() {
           </div>
         </div>
 
-        <div className="bg-muted/10 border-border/40 flex h-1/2 w-full items-center justify-center border-t md:border-t-0 md:border-l p-6 md:h-full md:w-1/2 md:justify-start md:pl-16 lg:pl-24">
+        <div className="bg-muted/10 border-border/40 flex h-1/2 w-full items-center justify-center border-t p-6 md:h-full md:w-1/2 md:justify-start md:border-t-0 md:border-l md:pl-16 lg:pl-24">
           <div className="relative flex aspect-video w-full max-w-lg items-center justify-center md:aspect-square">
             <div
               className={`absolute inset-0 transition-opacity duration-1000 ${activeStep === 0 ? 'z-10 opacity-100' : 'pointer-events-none z-0 opacity-0'}`}
