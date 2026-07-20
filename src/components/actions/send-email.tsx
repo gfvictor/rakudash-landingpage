@@ -1,8 +1,9 @@
 'use server'
 
-import { Resend } from 'resend'
+import { MailtrapClient } from 'mailtrap'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const token = process.env.MAILTRAP_TOKEN || ''
+const client = new MailtrapClient({ token })
 
 export async function sendContactEmail(formData: FormData) {
   try {
@@ -16,10 +17,14 @@ export async function sendContactEmail(formData: FormData) {
     }
 
     const destinationEmail = 'contact@openscope-systems.com'
+    const sender = {
+      name: 'Rakudash Contact',
+      email: 'mailtrap@demomailtrap.com',
+    }
 
-    const { data: resendData, error } = await resend.emails.send({
-      from: 'Rakudash Contact <onboarding@resend.dev>',
-      to: [destinationEmail],
+    const response = await client.send({
+      from: sender,
+      to: [{ email: destinationEmail }],
       subject: `[Rakudash LP] Novo Contato: ${data.subject}`,
       html: `
         <h2>Novo Contato via Landing Page - Rakudash</h2>
@@ -34,8 +39,8 @@ export async function sendContactEmail(formData: FormData) {
       `,
     })
 
-    if (error) {
-      console.error('Resend error:', error)
+    if (!response.success) {
+      console.error('Mailtrap error:', response)
       return { success: false, error: 'Failed to send e-mail' }
     }
 
