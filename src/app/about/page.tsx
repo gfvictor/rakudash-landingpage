@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       <PageTitle pageKey="navbar.about" />
       <main className="relative w-full flex-1">
-        <section className="bg-background relative flex min-h-[50vh] w-full flex-col items-center justify-center overflow-hidden pt-12 pb-24">
+        <section className="bg-background relative flex min-h-[90vh] w-full flex-col items-center justify-center overflow-hidden pt-12 pb-24">
           <NeuralNetworkBackground />
           <div className="from-primary/10 via-primary/5 pointer-events-none absolute top-0 right-0 h-[800px] w-[800px] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] to-transparent"></div>
 
@@ -21,12 +21,28 @@ export default function AboutPage() {
             <p className="text-muted-foreground max-w-3xl text-center text-lg leading-relaxed font-medium whitespace-pre-line sm:text-xl md:text-2xl">
               {t('about_page.subtitle')}
             </p>
+
+            <div className="text-primary bg-background/50 border-border mt-16 flex h-12 w-12 animate-bounce items-center justify-center rounded-full border shadow-lg backdrop-blur-sm">
+              <svg
+                className="h-6 w-6 opacity-80"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2.5"
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                ></path>
+              </svg>
+            </div>
           </div>
         </section>
 
         <section className="bg-card/30 border-border/40 relative overflow-hidden border-t py-24">
           <div className="relative z-10 container mx-auto max-w-5xl px-4 md:px-8">
-            <div className="flex flex-col items-center gap-16 lg:gap-20">
+            <div className="flex flex-col items-center gap-24 lg:gap-32">
               <div className="max-w-3xl text-center">
                 <h2 className="mb-8 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
                   {t('about_page.who_we_are.title')}
@@ -36,31 +52,61 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="bg-background border-border/50 group relative flex w-full flex-col items-stretch overflow-hidden rounded-[2.5rem] border shadow-xl sm:flex-row">
-                <div className="relative min-h-[320px] w-full shrink-0 [mask-image:linear-gradient(to_bottom,black_50%,transparent)] sm:min-h-full sm:w-[45%] sm:[mask-image:linear-gradient(to_right,black_60%,transparent)]">
-                  <img
-                    src="https://github.com/vininha.png"
-                    alt={t('about_page.founder.name')}
-                    className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
-                  />
-                  <div className="bg-primary/10 absolute inset-0 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0"></div>
+              <div className="flex w-full flex-col gap-16 lg:gap-20">
+                <div className="bg-background border-border/50 group relative flex w-full flex-col items-stretch overflow-hidden rounded-[2.5rem] border shadow-xl sm:flex-row">
+                  <div className="relative min-h-[320px] w-full shrink-0 [mask-image:linear-gradient(to_bottom,black_50%,transparent)] sm:min-h-full sm:w-[45%] sm:[mask-image:linear-gradient(to_right,black_60%,transparent)]">
+                    <img
+                      src="/img/avatar/vinicius.png"
+                      alt={t('about_page.founder.name')}
+                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                    />
+                    <div className="bg-primary/10 absolute inset-0 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0"></div>
+                  </div>
+
+                  <div className="relative z-20 -mt-24 flex flex-1 flex-col justify-center p-8 text-center sm:mt-0 sm:-ml-20 sm:p-10 sm:text-left lg:p-16">
+                    <h3 className="text-foreground mb-2 text-center text-2xl font-bold sm:text-4xl">
+                      {t('about_page.founder.name')}
+                    </h3>
+                    {t('about_page.founder.kana') && (
+                      <p className="text-muted-foreground mb-3 text-center text-sm tracking-wider sm:text-base">
+                        {t('about_page.founder.kana')}
+                      </p>
+                    )}
+                    <p className="text-primary mb-6 text-center text-lg font-medium sm:text-xl">
+                      {t('about_page.founder.role')}
+                    </p>
+                    <p className="text-muted-foreground text-center text-base leading-relaxed sm:text-lg">
+                      {t('about_page.founder.bio')}
+                    </p>
+                  </div>
                 </div>
 
-                <div className="relative z-20 -mt-24 flex flex-1 flex-col justify-center p-8 text-center sm:mt-0 sm:-ml-20 sm:p-10 sm:text-left lg:p-16">
-                  <h3 className="text-foreground mb-2 text-center text-2xl font-bold sm:text-4xl">
-                    {t('about_page.founder.name')}
-                  </h3>
-                  {t('about_page.founder.kana') && (
-                    <p className="text-muted-foreground mb-3 text-center text-sm tracking-wider sm:text-base">
-                      {t('about_page.founder.kana')}
+                <div className="bg-background border-border/50 group relative flex w-full flex-col items-stretch overflow-hidden rounded-[2.5rem] border shadow-xl sm:flex-row">
+                  <div className="relative min-h-[320px] w-full shrink-0 [mask-image:linear-gradient(to_bottom,black_50%,transparent)] sm:min-h-full sm:w-[45%] sm:[mask-image:linear-gradient(to_right,black_60%,transparent)]">
+                    <img
+                      src="/img/avatar/victor.png"
+                      alt={t('about_page.ui_lead.name')}
+                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                    />
+                    <div className="bg-primary/10 absolute inset-0 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0"></div>
+                  </div>
+
+                  <div className="relative z-20 -mt-24 flex flex-1 flex-col justify-center p-8 text-center sm:mt-0 sm:-ml-20 sm:p-10 sm:text-left lg:p-16">
+                    <h3 className="text-foreground mb-2 text-center text-2xl font-bold whitespace-pre-line sm:text-4xl">
+                      {t('about_page.ui_lead.name')}
+                    </h3>
+                    {t('about_page.ui_lead.kana') && (
+                      <p className="text-muted-foreground mb-3 text-center text-sm tracking-wider sm:text-base">
+                        {t('about_page.ui_lead.kana')}
+                      </p>
+                    )}
+                    <p className="text-primary mb-6 text-center text-lg font-medium sm:text-xl">
+                      {t('about_page.ui_lead.role')}
                     </p>
-                  )}
-                  <p className="text-primary mb-6 text-center text-lg font-medium sm:text-xl">
-                    {t('about_page.founder.role')}
-                  </p>
-                  <p className="text-muted-foreground text-center text-base leading-relaxed sm:text-lg">
-                    {t('about_page.founder.bio')}
-                  </p>
+                    <p className="text-muted-foreground text-center text-base leading-relaxed sm:text-lg">
+                      {t('about_page.ui_lead.bio')}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -87,7 +133,7 @@ export default function AboutPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="mb-6 text-3xl font-extrabold tracking-tight">
+                  <h3 className="mb-6 text-3xl font-bold tracking-tight">
                     {t('about_page.mission.title')}
                   </h3>
                   <p className="text-muted-foreground group-hover:text-foreground/90 text-lg leading-relaxed font-medium transition-colors duration-500">
@@ -119,7 +165,7 @@ export default function AboutPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="mb-6 text-3xl font-extrabold tracking-tight">
+                  <h3 className="mb-6 text-3xl font-bold tracking-tight">
                     {t('about_page.vision.title')}
                   </h3>
                   <p className="text-muted-foreground group-hover:text-foreground/90 text-lg leading-relaxed font-medium transition-colors duration-500">
@@ -133,7 +179,7 @@ export default function AboutPage() {
 
         <section className="bg-card/30 border-border/40 relative overflow-hidden border-t py-24">
           <div className="relative z-10 container mx-auto max-w-6xl px-4 text-center md:px-8">
-            <h2 className="mb-16 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="mb-16 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               {t('about_page.values.title')}
             </h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
