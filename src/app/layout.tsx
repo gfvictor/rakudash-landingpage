@@ -30,7 +30,7 @@ export default async function RootLayout({
           geistSans.variable,
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <I18nProvider>
             <div className="flex min-h-[100dvh] flex-col">
               <Navbar />
