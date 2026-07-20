@@ -56,7 +56,7 @@ export default function OpenScopeHome() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-foreground mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl">
+                <h3 className="text-foreground mb-6 text-4xl font-bold tracking-tight sm:text-5xl">
                   {t('openscope_home.problem.title')}
                 </h3>
                 <p className="text-muted-foreground text-lg leading-relaxed font-medium sm:text-xl">
@@ -100,7 +100,7 @@ export default function OpenScopeHome() {
                       />
                     </svg>
                   </div>
-                  <h3 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl">
+                  <h3 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl">
                     {t('openscope_home.solution.title')}
                   </h3>
                   <p className="text-muted-foreground group-hover:text-foreground/90 mb-10 text-lg leading-relaxed font-medium transition-colors duration-500 sm:text-xl">
@@ -140,7 +140,7 @@ export default function OpenScopeHome() {
               </h2>
             </div>
 
-            <div className="group relative flex overflow-x-hidden max-w-5xl mx-auto">
+            <div className="group relative mx-auto flex max-w-5xl overflow-x-hidden">
               <div className="animate-scroll flex items-center py-4 whitespace-nowrap">
                 {[...Array(6)].map((_, i) => (
                   <div key={i} className="flex items-center gap-16 px-8 md:gap-32 md:px-16">
@@ -239,9 +239,7 @@ export default function OpenScopeHome() {
                             />
                           </svg>
                         </div>
-                        <p className="text-foreground/90 pt-1 text-lg leading-relaxed font-medium">
-                          {item}
-                        </p>
+                        <p className="text-foreground/90 pt-1 text-lg leading-relaxed">{item}</p>
                       </div>
                     ),
                   )}
@@ -272,7 +270,7 @@ export default function OpenScopeHome() {
                         />
                       </svg>
                     </div>
-                    <h3 className="mb-6 text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
+                    <h3 className="mb-6 text-center text-3xl font-bold tracking-tight sm:text-4xl">
                       {t('openscope_home.how_we_work.title')}
                     </h3>
                     <p className="text-muted-foreground group-hover:text-foreground/90 mb-10 text-center text-lg leading-relaxed font-medium transition-colors duration-500">

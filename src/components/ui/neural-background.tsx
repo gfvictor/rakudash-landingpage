@@ -33,8 +33,8 @@ export const NeuralNetworkBackground = () => {
       constructor() {
         this.x = Math.random() * canvas!.width
         this.y = Math.random() * canvas!.height
-        this.vx = (Math.random() - 0.5) * 0.5
-        this.vy = (Math.random() - 0.5) * 0.5
+        this.vx = (Math.random() - 0.5) * 1.2
+        this.vy = (Math.random() - 0.5) * 1.2
         this.radius = Math.random() * 2 + 1
       }
 
