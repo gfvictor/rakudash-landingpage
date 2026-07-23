@@ -20,7 +20,15 @@ export function LanguageToggle() {
         return (
           <button
             key={code}
-            onClick={() => i18n.changeLanguage(code)}
+            onClick={() => {
+              if (!document.startViewTransition) {
+                i18n.changeLanguage(code)
+                return
+              }
+              document.startViewTransition(() => {
+                i18n.changeLanguage(code)
+              })
+            }}
             className={`cursor-pointer bg-transparent px-2 py-1 text-xs font-bold transition-colors ${
               isActive
                 ? 'text-foreground border-muted-foreground border-b'

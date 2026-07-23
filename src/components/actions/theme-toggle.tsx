@@ -13,8 +13,16 @@ export function ThemeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="text-foreground hover:text-foreground/80 rounded-full p-2 transition-colors"
+      onClick={() => {
+        if (!document.startViewTransition) {
+          setTheme(theme === 'dark' ? 'light' : 'dark')
+          return
+        }
+        document.startViewTransition(() => {
+          setTheme(theme === 'dark' ? 'light' : 'dark')
+        })
+      }}
+      className="text-foreground hover:text-foreground/80 rounded-full p-2 transition-transform hover:scale-110 active:scale-95"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
