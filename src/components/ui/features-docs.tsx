@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { flushSync } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 import { PlayCircle, RotateCcw } from 'lucide-react'
 
@@ -121,10 +122,21 @@ export const FeaturesDocs = () => {
                     <button
                       key={system.id}
                       onClick={() => {
-                        setActiveSystem(system.id)
-                        if (system.features.length > 0) {
-                          setActiveFeature(system.features[0])
+                        if (!document.startViewTransition) {
+                          setActiveSystem(system.id)
+                          if (system.features.length > 0) {
+                            setActiveFeature(system.features[0])
+                          }
+                          return
                         }
+                        document.startViewTransition(() => {
+                          flushSync(() => {
+                            setActiveSystem(system.id)
+                            if (system.features.length > 0) {
+                              setActiveFeature(system.features[0])
+                            }
+                          })
+                        })
                       }}
                       className={`relative flex-1 rounded-xl py-3 text-center text-sm font-medium ${
                         isSystemActive
@@ -146,7 +158,17 @@ export const FeaturesDocs = () => {
                     return (
                       <button
                         key={feature.id}
-                        onClick={() => setActiveFeature(feature)}
+                        onClick={() => {
+                          if (!document.startViewTransition) {
+                            setActiveFeature(feature)
+                            return
+                          }
+                          document.startViewTransition(() => {
+                            flushSync(() => {
+                              setActiveFeature(feature)
+                            })
+                          })
+                        }}
                         className={`rounded-xl px-3 py-2.5 text-left text-sm transition-colors ${
                           isActive
                             ? 'bg-primary/10 text-primary font-medium'

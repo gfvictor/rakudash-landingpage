@@ -223,7 +223,7 @@
     }
   },
   "openscope_home": {
-    "title": "Sua Operação. Elevada à Máxima Eficiência.",
+    "title": "Sua Operação. \nElevada à Máxima Eficiência.",
     "subtitle": "Desenvolvemos sistemas sob medida e plataformas inteligentes que eliminam o trabalho braçal, integram seus dados e preparam sua infraestrutura para escalar sem gargalos.",
     "cta_rakudash": "Conhecer o Rakudash",
     "problem": {
@@ -275,6 +275,10 @@
         "Inovação Pragmática",
         "Parceria Estratégica"
       ]
+    },
+    "cta": {
+      "title": "Conheça nossos produtos",
+      "button": "Explorar o Rakudash"
     },
     "founder": {
       "name": "Vinicius Nakamura Goes",

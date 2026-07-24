@@ -216,7 +216,7 @@
     }
   },
   "openscope_home": {
-    "title": "Your Operation. Elevated to Maximum Efficiency.",
+    "title": "Your Operation. \nElevated to Maximum Efficiency.",
     "subtitle": "We develop custom systems and intelligent platforms that eliminate manual labor, integrate your data, and prepare your infrastructure to scale without bottlenecks.",
     "cta_rakudash": "Discover Rakudash",
     "problem": {
@@ -275,6 +275,10 @@
         "Pragmatic Innovation",
         "Strategic Partnership"
       ]
+    },
+    "cta": {
+      "title": "Discover our products",
+      "button": "Explore Rakudash"
     },
     "founder": {
       "name": "Vinicius Nakamura Goes",
