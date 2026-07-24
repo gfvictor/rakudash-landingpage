@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { flushSync } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
 import { ShieldCheck, Clock, CheckCircle2, TrendingUp, Inbox, ArrowRight } from 'lucide-react'
@@ -9,7 +10,7 @@ type Tab = 'entori' | 'rakudash' | 'wanspot'
 
 export const EcosystemImpact = () => {
   const { t } = useTranslation()
-  const [activeTab, setActiveTab] = useState<Tab>('rakudash')
+  const [activeTab, setActiveTab] = useState<Tab>('entori')
 
   const tabs: Record<
     Tab,
@@ -94,7 +95,17 @@ export const EcosystemImpact = () => {
             {(Object.keys(tabs) as Tab[]).map((tabKey) => (
               <button
                 key={tabKey}
-                onClick={() => setActiveTab(tabKey)}
+                onClick={() => {
+                  if (!document.startViewTransition) {
+                    setActiveTab(tabKey)
+                    return
+                  }
+                  document.startViewTransition(() => {
+                    flushSync(() => {
+                      setActiveTab(tabKey)
+                    })
+                  })
+                }}
                 className={`relative rounded-xl px-6 py-3 text-sm font-medium sm:px-10 sm:text-base ${
                   activeTab === tabKey
                     ? 'text-foreground bg-background border-border/50 border font-semibold shadow-sm'
@@ -129,7 +140,7 @@ export const EcosystemImpact = () => {
                 <span className="text-muted-foreground relative z-10 mb-4 text-sm font-medium tracking-wider uppercase">
                   {activeData.subtitle}
                 </span>
-                <h3 className="text-foreground relative z-10 mb-6 text-2xl leading-relaxed font-medium sm:text-3xl">
+                <h3 className="text-foreground relative z-10 mb-6 text-xl leading-relaxed font-medium sm:text-2xl">
                   {activeData.description}
                 </h3>
               </div>

@@ -18,7 +18,7 @@ export default function OpenScopeHome() {
           <NeuralNetworkBackground />
 
           <div className="animate-in fade-in zoom-in-95 relative z-10 container mx-auto px-6 text-center duration-700">
-            <h1 className="mx-auto mb-8 max-w-4xl text-4xl leading-[1.1] font-bold tracking-tight sm:text-6xl md:text-7xl">
+            <h1 className="mx-auto mb-8 max-w-4xl text-4xl leading-[1.1] font-bold tracking-tight whitespace-pre-line sm:text-6xl md:text-7xl">
               {t('openscope_home.title')}
             </h1>
             <p className="text-muted-foreground mx-auto mb-10 max-w-2xl text-lg leading-relaxed font-medium sm:text-xl md:text-2xl">
