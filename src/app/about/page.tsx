@@ -56,9 +56,14 @@ export default function AboutPage() {
                 <div className="bg-background border-border/50 group relative flex w-full flex-col items-stretch overflow-hidden rounded-[2.5rem] border shadow-xl sm:flex-row">
                   <div className="relative min-h-[320px] w-full shrink-0 [mask-image:linear-gradient(to_bottom,black_50%,transparent)] sm:min-h-full sm:w-[45%] sm:[mask-image:linear-gradient(to_right,black_60%,transparent)]">
                     <img
+                      src="/img/avatar/vinicius-light.jpg"
+                      alt={t('about_page.founder.name')}
+                      className="dark:hidden absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                    />
+                    <img
                       src="/img/avatar/vinicius.png"
                       alt={t('about_page.founder.name')}
-                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                      className="hidden dark:block absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
                     />
                     <div className="bg-primary/10 absolute inset-0 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0"></div>
                   </div>
@@ -84,9 +89,14 @@ export default function AboutPage() {
                 <div className="bg-background border-border/50 group relative flex w-full flex-col items-stretch overflow-hidden rounded-[2.5rem] border shadow-xl sm:flex-row">
                   <div className="relative min-h-[320px] w-full shrink-0 [mask-image:linear-gradient(to_bottom,black_50%,transparent)] sm:min-h-full sm:w-[45%] sm:[mask-image:linear-gradient(to_right,black_60%,transparent)]">
                     <img
+                      src="/img/avatar/victor-light.jpg"
+                      alt={t('about_page.ui_lead.name')}
+                      className="dark:hidden absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                    />
+                    <img
                       src="/img/avatar/victor.png"
                       alt={t('about_page.ui_lead.name')}
-                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                      className="hidden dark:block absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
                     />
                     <div className="bg-primary/10 absolute inset-0 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0"></div>
                   </div>
